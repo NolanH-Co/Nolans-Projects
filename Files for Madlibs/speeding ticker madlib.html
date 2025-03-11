@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Speeding Ticket</title> 
+
+</head>
+
+<body>
+    <h1>Speeding Ticket</h1>
+<script>
+function pickrandomword(words) {
+    return words[Math.floor(Math.random() * words.length)]
+};
+
+//user inputed prompts for the story
+
+function noun() {
+   globalThis.noun0 = prompt("Enter a noun");
+   globalThis.noun1 = prompt("Enter a noun");
+   globalThis.noun2 = prompt("Enter a noun");
+   globalThis.noun3 = prompt("Enter a noun");
+   globalThis.noun4 = prompt("Enter a noun");
+};
+   
+function adjective() {
+    globalThis.adjective0 = prompt("Enter a adjective");
+    globalThis.adjective1 = prompt("Enter a adjective");
+    globalThis.adjective2 = prompt("Enter a adjective");
+    globalThis.adjective3 = prompt("Enter a adjective");
+    globalThis.adjective4 = prompt("Enter a adjective");
+};   
+
+function nouns() {
+    globalThis.nouns0 = prompt("Enter a plural noun");
+    globalThis.nouns1 = prompt("Enter a plural noun");
+    globalThis.nouns2 = prompt("Enter a plural noun");
+    globalThis.nouns3 = prompt("Enter a plural noun");
+    globalThis.nouns4 = prompt("Enter a plural noun");
+};   
+
+function verbing() {
+    globalThis.verbing0 = prompt("Enter a verb ending in ING");
+    globalThis.verbing1 = prompt("Enter a verb ending in ING");
+    globalThis.verbing2 = prompt("Enter a verb ending in ING");
+    globalThis.verbing3 = prompt("Enter a verb ending in ING");
+    globalThis.verbing4 = prompt("Enter a verb ending in ING");
+}; 
+
+function adverb() {
+    globalThis.adverbs0 = prompt("Enter an adverb");
+    globalThis.adverbs1 = prompt("Enter an adverb");
+    globalThis.adverbs2 = prompt("Enter an adverb");
+    globalThis.adverbs3 = prompt("Enter an adverb");
+    globalThis.adverbs4 = prompt("Enter an adverb");
+}; 
+
+noun();
+nouns();
+adjective();
+verbing();
+adverb();
+
+var nnoun = [noun0, noun1, noun2, noun3, noun4];
+var aadjective = [adjective0, adjective1, adjective2, adjective3, adjective4];
+var nnouns = [nouns0, nouns1, nouns2, nouns3, nouns4];
+var vverbing = [verbing0, verbing1, verbing2, verbing3, verbing4];
+var aadverb = [adverbs0, adverbs1, adverbs2, adverbs3, adverbs4];
+
+//The story
+
+var story =("to be performed by two " + pickrandomword(aadjective) + 
+" people in the room." + pickrandomword(vverbing) + 
+"OFFICER: Sir, do you realize how fast you were " + pickrandomword(vverbing) + 
+"? DRIVER: No, how fast was I " + pickrandomword(nnouns) + 
+"OFFICER: You were going fifty " + pickrandomword(nnoun) + 
+" per hour in a twenty-five " + pickrandomword(nnoun) +
+" zone." + pickrandomword(nnoun) + 
+"DRIVER: I'm sorry. I'm nervous. I'm taking my " + pickrandomword(nnoun) + 
+" to the hospital. She's about to have a/an " + pickrandomword(nnoun) +
+" OFFICER: You also went through a red " + pickrandomword(nnoun) +
+" and failed to stop at a/an " + pickrandomword(aadjective) + 
+" sign. May I see your driver's " + pickrandomword(nnoun) + 
+"? DRIVER: Yes. Oh, my! I left it in my other pair of " + pickrandomword(nnouns) + 
+". You see, my wife started to have labor " + pickrandomword(nnouns) + 
+", and I wanted to get to the " + pickrandomword(nnoun) + 
+" as " + pickrandomword(aadverb) + 
+" as possible. OFFICER: Your wife? DRIVER: She's right there in the back " + pickrandomword(nnoun) +
+". (turns) Oh, my! Would you believe I forgot my " + pickrandomword(nnoun) +
+" too?"
+);
+
+document.write(story.fontsize(6));
+// Love it - Adrian.P
+//;) - cam
+</script>
+
+</body>
+
+</html>

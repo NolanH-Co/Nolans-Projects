@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tom the turkey</title>
+</head>
+
+<body>
+
+    <h1>The story</h1>
+    <p id="A100"><strong> </strong></p>
+
+    <script>
+
+        var pickRandomWord = function (words) {
+            return words[Math.floor(Math.random() * words.length)];
+        };
+
+        generateRamdomMadLib = function () {
+            globalThis.randomVerbEnding0 = ["", "", "", "", ""];
+            globalThis.randomNoun0 = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
+            globalThis.randomAdjevtives0 = ["Smelly", "Boring", "Stupid", "Fat", "Funny"];
+            globalThis.randomAdjevtives1 = ["Foolish", "Fast", "Black", "Retarded", "Disabled"];
+            globalThis.randomPluralNoun0 = ["Apples", "Robots", "", "", ""];
+            globalThis.randomAdjevtives2 = ["Nasty", "", "", "", ""];
+            globalThis.randomAdjevtives3 = ["", "", "", "", ""];
+            globalThis.randomVerb0 = ["Run", "Swim", "Punch", "", ""];
+            globalThis.randombodypart4 = ["hitlers arm", "fetus", "intestine", "chicken", ""];
+            globalThis.randomAdjevtives5 = ["", "", "", "", ""];
+            globalThis.randomAdjevtives6 = ["", "", "", "", ""];
+            globalThis.randomNoun1 = ["Kool-aid", "99% Alcohol", "", "", ""];
+            globalThis.randomAdjevtives7 = ["", "", "", "", ""];
+            globalThis.randomNoun2 = ["Dads house", "Third Reich", "Office", "Hitlers home", "Moms house"];
+            globalThis.randomNoun3 = ["grave", "Turkey", "napalm", "agent orange", "death"];
+            globalThis.randomNoun4 = ["nazi", "american", "soviet", "agent orange", "kamakazie pilot"];
+            console.log(pickRandomWord(randomNoun0));
+            console.log(pickRandomWord(randomNoun0));
+            console.log(pickRandomWord(randomNoun0));
+        };
+
+        generateRamdomMadLib();
+
+            var dictionary, lower;
+            function start() {
+                dictionary = ["On Christmas", pickRandomWord(randomPluralNoun0), "gets visited by santa. on Easter,", pickRandomWord(randomNoun0),
+                    "The easter bunny hops into your", pickRandomWord(randomNoun1), "but who comes to give (a)", pickRandomWord(randomAdjevtives1),
+                    "you, (b)", pickRandomWord(randomPluralNoun0),"on thanksgiving? Tom the turkey thats who", ", (c)", "if you have been a thankful little girl or", pickRandomWord(randomNoun1),
+                    "Tom the turkey just might come visit your", pickRandomWord(randomNoun2), "While you rest your pretty little", pickRandomWord(randombodypart4), "during your post-meal nap",
+                    "This magical", pickRandomWord(randomNoun3), "flies trough the", pickRandomWord(randomNoun3), ". and leaves your cornucopia might be filled with candy, presents, and",
+                    pickRandomWord(randomPluralNoun0), "at your front", pickRandomWord(randomNoun2), "if your lucky. But if your ungrateful little", pickRandomWord(randomNoun2), "youll get a cornucopia filled with", pickRandomWord(randomPluralNoun0),
+                    "so be a/an", pickRandomWord(randomAdjevtives1), "little", pickRandomWord(randomNoun4), "and maybe this year ",
+                    "tom the turkey will come to your", pickRandomWord(randomNoun2)].join(" ");
+                lower = dictionary.toString().toLowerCase();
+                return lower;
+            };
+            document.getElementById("A100").innerHTML = start();
+
+
+
+
+            //console.log(dictionary)
+
+    </script>
+</body>
+
+</html>

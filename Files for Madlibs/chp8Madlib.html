@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Pick your pie Mad Lib</title>
+</head>
+
+<body>
+
+    <h1>The story</h1>
+    <p id="A100"><strong> </strong></p>
+
+    <script>
+
+        var pickRandomWord = function (words) {
+            return words[Math.floor(Math.random() * words.length)];
+        };
+
+        generateRamdomMadLib = function () {
+            globalThis.randomVerbEnding0 = ["Crying", "Denying", "Bending", "Bursting", "Coming"];
+            globalThis.randomNoun0 = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
+            globalThis.randomAdjevtives0 = ["Smelly", "Boring", "Stupid", "Fat", "Funny"];
+            globalThis.randomAdjevtives1 = ["Foolish", "Fast", "Black", "Retarded", "Disabled"];
+            globalThis.randomPluralNoun0 = ["Apples", "Robots", "Towers", "Planes", "Dictators"];
+            globalThis.randomAdjevtives2 = ["Nasty", "Bloody", "Alive", "Awful", "Breakable"];
+            globalThis.randomAdjevtives3 = ["Ashamed", "Angry", "Disturbed", "Different", "Delightful"];
+            globalThis.randomVerb0 = ["Run", "Swim", "Punch", "Believe", "Beat"];
+            globalThis.randomAdjevtives4 = ["Adorable", "Agreeable", "Amused", "Better", "Blushing"];
+            globalThis.randomAdjevtives5 = ["Brave", "Busy", "Cautious", "Clean", "Cloudy"];
+            globalThis.randomAdjevtives6 = ["Combative", "Condemned", "Courageous", "Cooperative", "Concerned"];
+            globalThis.randomNoun1 = ["Kool-aid", "99% Alcohol", "Watermelon", "KFC", "Grape Soda"];
+            globalThis.randomAdjevtives7 = ["Clumsy", "Calm", "Charming", "Dead", "Cruel"];
+            globalThis.randomNoun2 = ["Corn Bread", "Cam", "Morbisus", "Spider-Monkey", "Black Person"];
+
+
+            console.log(pickRandomWord(randomNoun0));
+            console.log(pickRandomWord(randomNoun0));
+            console.log(pickRandomWord(randomNoun0));
+        };
+
+        generateRamdomMadLib();
+
+        var dictionary, lower;
+        function start() {
+            dictionary = ["Do you love", pickRandomWord(randomVerbEnding0), "pie on thanksgiving? Who doesn't! the only problem is choosing which", pickRandomWord(randomNoun0),
+                "to eat! Take this quiz to find out your", pickRandomWord(randomAdjevtives0), "preference! 1.Your favorite kind of pie involves (a)", pickRandomWord(randomAdjevtives1),
+                "slices of fruit, (b) nuts and", pickRandomWord(randomPluralNoun0), ", (c)", pickRandomWord(randomAdjevtives2), "vegetables. 2.Of these three", pickRandomWord(randomAdjevtives3),
+                "options, your favorite color of food to", pickRandomWord(randomVerb0), "is (a) yellow, (b) brown, or (c) orange. 3.Do you prefer your food to be (a) gooey and sweet witn a touch of", pickRandomWord(randomAdjevtives4),
+                "cinnamon, (b) sweet with a sprinkling of", pickRandomWord(randomAdjevtives5), "salt, or (c) mushy and", pickRandomWord(randomAdjevtives6), ". If you picked mostly a's, apple", pickRandomWord(randomNoun1),
+                "is your favorite Thanksgiving treat. If you picked mosly b's, you are a fan of", pickRandomWord(randomAdjevtives7), "pecan pie. If you picked mostly c's, you can't say no to a heaping", pickRandomWord(randomNoun2),
+                "of pumpkin or sweet potato pie!"].join(" ");
+            lower = dictionary.toString().toLowerCase();
+            return lower;
+        };
+        document.getElementById("A100").innerHTML = start();
+
+
+
+
+        //console.log(dictionary)
+
+    </script>
+</body>
+
+</html>

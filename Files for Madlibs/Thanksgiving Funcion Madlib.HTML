@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stuffing Yourself Silly: A Thanksgiving Madlib</title>
+</head>
+<body>
+    <h1>Stuffing Yourself Silly: A Thanksgiving Madlib</h1>
+  
+<script>
+
+function pickrandomword(words) {
+    return words[Math.floor(Math.random() * words.length)]
+};
+
+function noun() {
+   globalThis.noun0 = prompt("Enter a noun");
+   globalThis.noun1 = prompt("Enter a noun");
+   globalThis.noun2 = prompt("Enter a noun");
+   globalThis.noun3 = prompt("Enter a noun");
+   globalThis.noun4 = prompt("Enter a noun");
+};
+   
+function adjective() {
+    globalThis.adjective0 = prompt("Enter a adjective");
+    globalThis.adjective1 = prompt("Enter a adjective");
+    globalThis.adjective2 = prompt("Enter a adjective");
+    globalThis.adjective3 = prompt("Enter a adjective");
+    globalThis.adjective4 = prompt("Enter a adjective");
+};   
+
+function nouns() {
+    globalThis.nouns0 = prompt("Enter a plural noun");
+    globalThis.nouns1 = prompt("Enter a plural noun");
+    globalThis.nouns2 = prompt("Enter a plural noun");
+    globalThis.nouns3 = prompt("Enter a plural noun");
+    globalThis.nouns4 = prompt("Enter a plural noun");
+};   
+
+function sillyword() {
+    globalThis.sillyword0 = prompt("Enter a silly word");
+}; 
+
+function partbody() {
+    globalThis.partbody0 = prompt("Enter a body part");
+    globalThis.partbody1 = prompt("Enter a body part");
+    globalThis.partbody2 = prompt("Enter a body part");
+    globalThis.partbody3 = prompt("Enter a body part");
+    globalThis.partbody4 = prompt("Enter a body part");
+}; 
+
+noun();
+nouns();
+adjective();
+sillyword();
+partbody();
+
+ var nnoun = [noun0, noun1, noun2, noun3, noun4];
+ var aadjective = [adjective0, adjective1, adjective2, adjective3, adjective4];
+ var nnouns = [nouns0, nouns1, nouns2, nouns3, nouns4];
+ var ssillyword = [sillyword0];
+ var ppartbody = [partbody0, partbody1, partbody2, partbody3, partbody4];
+
+var story =("Thanksgiving is not a/an " + pickrandomword(nnoun) + 
+" to be taken lightly. In order to eat as much " + pickrandomword(nnoun) + 
+" as possible, you need to have a/an " + pickrandomword(aadjective) + 
+" strategy. Follow these handy dandy " + pickrandomword(nnouns) + 
+", and you, too, can own Thanksgiving. TIP #1: Load up on the most popular " + pickrandomword(nnouns) + 
+" first. Mashed " + pickrandomword(nnouns) +
+" and gravy tend to be the first to go, and sweet potato " + pickrandomword(nnoun) + 
+" and cranberry " + pickrandomword(nnoun) + 
+" go to fast, too. Get 'em while they're " + pickrandomword(aadjective) +
+". TIP #2: Stick to the light meat. Dark meat conatins more " + pickrandomword(ssillyword) +
+" than light meat, and everyone knows that " + pickrandomword(ssillyword) + 
+" makes you sleepy when you eat it. If you're sleeping, you won't be able to eat " + pickrandomword(nnouns) + 
+"! TIP #3: Don't worry about saving room in your " + pickrandomword(ppartbody) + 
+" for dessert. Studies by famous " + pickrandomword(nnouns) +
+" show taht no matter how much " + pickrandomword(nnoun) +
+" you've eaten, you always have room for dessert--especially if it's " + pickrandomword(nnoun) +
+" pie!");
+
+document.write(story.fontsize(6));
+
+</script>
+
+<img src="https://142090338.cdn6.editmysite.com/uploads/1/4/2/0/142090338/s777581126470552344_p1046_i1_w400.png" style="position:fixed; right: 0.001px; bottom: 1px;">
+
+</body>
+</html>

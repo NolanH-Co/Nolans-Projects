@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>Mad Lib Afraid Of The Dark</head>
+
+<body>
+
+
+    <style>
+
+        body {
+            background-image: url(https://th.bing.com/th/id/R.dd39a1a2010b446ca5874776aaa58c52?rik=an7QvXUEgnyABw&riu=http%3a%2f%2fmedia.tumblr.com%2ftumblr_ln9vjmZrFl1qc90mr.png&ehk=f8w1d2INMPGTq4752Vhj4%2b6Z6uRBCMuQqsWp3JlEIRU%3d&risl=&pid=ImgRaw&r=0);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+
+    <h1>The story</h1>
+    <p style="color: #961ca4" id="A100"><strong> </strong></p>
+
+    <script>
+
+        //The varibles
+
+        var pluralNouns0 = [];
+        for (var i = 0; i < 2; i++)
+            pluralNouns0.push(prompt("please enter an plural noun"));
+        var verbIngs0 = [];
+        for (var i = 0; i < 2; i++)
+            verbIngs0.push(prompt("please enter an verb ending in ing"));
+        var nouns0 = [];
+        for (var i = 0; i < 2; i++)
+            nouns0.push(prompt("please enter an noun"));
+        var nouns1 = [];
+        for (var i = 0; i < 2; i++)
+            nouns1.push(prompt("please enter an noun"));
+        var pluralNouns1 = [];
+        for (var i = 0; i < 2; i++)
+            pluralNouns1.push(prompt("please enter an plural noun"));
+        var partOfTheBodys0 = [];
+        for (var i = 0; i < 2; i++)
+            partOfTheBodys0.push(prompt("please enter an part of the body"));
+        var nouns2 = [];
+        for (var i = 0; i < 2; i++)
+            nouns2.push(prompt("please enter an noun"));
+        var verbIngs1 = [];
+        for (var i = 0; i < 2; i++)
+            verbIngs1.push(prompt("please enter an verb ending in ing"));
+        var partOfTheBodyPlurals0 = [];
+        for (var i = 0; i < 2; i++)
+            partOfTheBodyPlurals0.push(prompt("please enter an part of the body plural"));
+        var verbIngs2 = [];
+        for (var i = 0; i < 2; i++)
+            verbIngs2.push(prompt("please enter an verb ending in ing"));
+        var nouns3 = [];
+        for (var i = 0; i < 2; i++)
+            nouns3.push(prompt("please enter an noun"));
+        var nouns4 = [];
+        for (var i = 0; i < 2; i++)
+            nouns4.push(prompt("please enter an noun"));
+        var partOfTheBodys1 = [];
+        for (var i = 0; i < 2; i++)
+            partOfTheBodys1.push(prompt("please enter an part of the body"));
+        var adverbs0 = [];
+        for (var i = 0; i < 2; i++)
+            adverbs0.push(prompt("please enter an adverb"));
+        var partOfTheBodyPlurals1 = [];
+        for (var i = 0; i < 2; i++)
+            partOfTheBodyPlurals1.push(prompt("please enter an part of the body plural"));
+
+        var pluralNoun0 = pluralNouns0[Math.floor(Math.random() * 2)];
+        var verbIng0 = verbIngs0[Math.floor(Math.random() * 2)];
+        var noun0 = nouns0[Math.floor(Math.random() * 2)];
+        var noun1 = nouns1[Math.floor(Math.random() * 2)];
+        var pluralNoun1 = pluralNouns1[Math.floor(Math.random() * 2)];
+        var partOfTheBody0 = partOfTheBodys0[Math.floor(Math.random() * 2)];
+        var noun2 = nouns2[Math.floor(Math.random() * 2)];
+        var verbIng1 = verbIngs1[Math.floor(Math.random() * 2)];
+        var partOfTheBodyPlural0 = partOfTheBodyPlurals0[Math.floor(Math.random() * 2)];
+        var verbIng2 = verbIngs2[Math.floor(Math.random() * 2)];
+        var noun3 = nouns3[Math.floor(Math.random() * 2)];
+        var noun4 = nouns4[Math.floor(Math.random() * 2)];
+        var partOfTheBody1 = partOfTheBodys1[Math.floor(Math.random() * 2)];
+        var adverb0 = adverbs0[Math.floor(Math.random() * 2)];
+        var partOfTheBodyPlural1 = partOfTheBodyPlurals1[Math.floor(Math.random() * 2)];
+        
+        //the story as an alert
+
+       /* var MadLibStory = ["I was home alone and scared out of my", pluralNouns0, ". I could hear the wind", verbIng0, ", and off in the distance a/an", noun0, "was howling. I crossed the room, locked the", noun1,
+            ", and climbed into bed, pulling the", pluralNouns1, "over my", partOfTheBody0, "then it happened. I could hear a/an", noun2, "", verbIng1, "up the stairs. My", partOfTheBodyPlural0,
+            "started to chatter and my knees began", verbIng2, ". The", noun3, "was thrust open and there was a huge", noun4, "with hair all over his", partOfTheBody1, ". It was my father. Hi, we're home,' he said", adverb0,
+            "'Hope you weren't afraid of staying home alone.' 'No,' I said, lying through my", partOfTheBodyPlural1 + "."].join(" ");*/
+
+        //alert(MadLibStory);
+
+        //the story
+
+        var dictionary, lower;
+        function start() {
+            dictionary = ["I was home alone and scared out of my", pluralNoun0, ".I could hear the wind", verbIng0, ", and off in the distance a / an", noun0, "was howling.I crossed the room, locked the", noun1,
+                ", and climbed into bed, pulling the", pluralNouns1, "over my", partOfTheBody0, "then it happened. I could hear a/an", noun2, "", verbIng1, "up the stairs. My", partOfTheBodyPlural0,
+                "started to chatter and my knees began", verbIng2, ". The", noun3, "was thrust open and there was a huge", noun4, "with hair all over his", partOfTheBody1, ". It was my father. Hi, we're home,' he said", adverb0,
+                "'Hope you weren't afraid of staying home alone.' 'No,' I said, lying through my", partOfTheBodyPlural1 + "."].join(" ");
+            lower = dictionary.toString().toLowerCase();
+            return lower;
+        };
+        document.getElementById("A100").innerHTML = start();
+        
+      
+    </script>
+
+    
+
+</body>
+
+</html>

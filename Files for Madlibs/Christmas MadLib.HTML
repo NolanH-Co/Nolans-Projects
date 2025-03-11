@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Going to See Santa: A Christmas Madlib</title>
+</head>
+<body>
+    <h1>Going to See Santa: A Christmas Madlib</h1>
+  
+<script>
+
+function pickrandomword(words) {
+    return words[Math.floor(Math.random() * words.length)]
+};
+
+function noun() {
+   globalThis.noun0 = prompt("Enter a noun");
+   globalThis.noun1 = prompt("Enter a noun");
+   globalThis.noun2 = prompt("Enter a noun");
+   globalThis.noun3 = prompt("Enter a noun");
+   globalThis.noun4 = prompt("Enter a noun");
+};
+   
+function adjective() {
+    globalThis.adjective0 = prompt("Enter a adjective");
+    globalThis.adjective1 = prompt("Enter a adjective");
+    globalThis.adjective2 = prompt("Enter a adjective");
+};   
+
+function nouns() {
+    globalThis.nouns0 = prompt("Enter a plural noun");
+    globalThis.nouns1 = prompt("Enter a plural noun");
+};   
+
+function sillyword() {
+    globalThis.sillyword0 = prompt("Enter a silly word");
+    globalThis.sillyword1 = prompt("Enter a silly word");
+}; 
+
+function partbody() {
+    globalThis.partbody0 = prompt("Enter a body part");
+    globalThis.partbody1 = prompt("Enter a body part");
+}; 
+
+function personroom() {
+    globalThis.personroom0 = prompt("Enter a person in the room");
+    globalThis.personroom1 = prompt("Enter a person in the room");
+}; 
+
+function number() {
+    globalThis.number0 = prompt("Enter a number");
+    globalThis.number1 = prompt("Enter a number");
+}; 
+
+function color() {
+    globalThis.color0 = prompt("Enter a color");
+    globalThis.color1 = prompt("Enter a color");
+}; 
+
+function clothes() {
+    globalThis.clothes0 = prompt("Enter an article of clothing (plural)");
+    globalThis.clothes1 = prompt("Enter an article of clothing (plural)");
+}; 
+
+function adverb() {
+    globalThis.adverb0 = prompt("Enter an adverb");
+    globalThis.adverb1 = prompt("Enter an adverb");
+}; 
+
+function animal() {
+    globalThis.animal0 = prompt("Enter an animal");
+    globalThis.animal1 = prompt("Enter ann animal");
+}; 
+
+function exclamation() {
+    globalThis.exclamation0 = prompt("Enter an exclamation");
+    globalThis.exclamation1 = prompt("Enter an exclamation");
+}; 
+
+noun();
+nouns();
+adjective();
+sillyword();
+partbody();
+animal();
+exclamation();
+adverb();
+clothes();
+color();
+number();
+personroom();
+
+ var nnoun = [noun0, noun1, noun2, noun3, noun4];
+ var aadjective = [adjective0, adjective1, adjective2];
+ var nnouns = [nouns0, nouns1];
+ var ssillyword = [sillyword0];
+ var ppartbody = [partbody0, partbody1];
+ var aanimal = [animal0, animal1];
+ var eexclamation= [exclamation0, exclamation1];
+ var aadverb = [adverb0, adverb1];
+ var cclothes = [clothes0, clothes1];
+ var ccolor = [color1, color1];
+ var nnumber = [number0, number1];
+ var ppersonroom = [personroom0, personroom1];
+
+var story =("Yesterday I took my friend " + pickrandomword(ppersonroom) + 
+" to see Santa Claus at the department store. He/She is only " + pickrandomword(nnumber) + 
+" years old, so I had to be sure to hold on to his/her " + pickrandomword(ppartbody) + 
+" whenever we crossed a/an " + pickrandomword(nnoun) + 
+". When we got to the " + pickrandomword(nnoun) + 
+", there was a long line of " + pickrandomword(aadjective) + 
+" kids waiting to talk to Santa, who was sitting on a platform in the " + pickrandomword(nnoun) + 
+" department. Santa Claus is a big, fat, " + pickrandomword(aadjective) +
+" man with a/an " + pickrandomword(ccolor) + 
+" beard who dresses in bright red " + pickrandomword(cclothes) +  
+". Whenever a little kid came up, Santa would sit the child on his " + pickrandomword(nnoun) + 
+" and say, '" + pickrandomword(ssillyword) +
+".'' Then he would say, 'Now, have you been a good little " + pickrandomword(nnoun) + 
+"?' And the kid would say, '" + pickrandomword(eexclamation) +
+"!' Then Santa would say, 'And what do you want for Christmas?' And the kid would say, 'I want a/an " + pickrandomword(aanimal) + 
+",' or 'I want an electric " + pickrandomword(nnoun) + 
+",' or 'I want some little toy " + pickrandomword(nnouns) + 
+".' Then Santa would say, 'You bet,' and the kid would run " + pickrandomword(aadverb) + 
+" back to his or her parents.");
+
+document.write(story.fontsize(6));
+
+</script>
+
+<img src="https://142090338.cdn6.editmysite.com/uploads/1/4/2/0/142090338/s777581126470552344_p1046_i1_w400.png" style="position:fixed; right: 0.001px; bottom: 1px;">
+
+</body>
+</html>

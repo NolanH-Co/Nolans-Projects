@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Pool Rules</title>
+
+</head>
+
+<body>
+       <h1>Pool Rules</h1>
+<script>
+
+function pickrandomword(words) {
+    return words[Math.floor(Math.random() * words.length)]
+};
+
+//variables for input
+function noun() {
+   globalThis.noun0 = "Tower"
+   globalThis.noun1 = "Former President Barak Obama"
+   globalThis.noun2 = "Mac and Cheese"
+   globalThis.noun3 = "The One Piece"
+   globalThis.noun4 = "The independant Pincipality of Sealand"
+};
+   
+function adjective() {
+    globalThis.adjective0 = "Tremendous"
+    globalThis.adjective1 = "Lanky"
+    globalThis.adjective2 = "Delusional"
+    globalThis.adjective3 = "HUMBLE."
+    globalThis.adjective4 = "monkey-like"
+};   
+
+function nouns() {
+    globalThis.nouns0 = "Clintons"
+    globalThis.nouns1 = "Bermuda Triangle"
+    globalThis.nouns2 = "Cat girls"
+    globalThis.nouns3 = "gas chambers"
+    globalThis.nouns4 = "Turtles"
+};   
+
+function numbers() {
+    globalThis.numbers0 = "1"
+    globalThis.numbers1 = "2,147,483,647"
+    globalThis.numbers2 = "999"
+}; 
+
+function partbody() {
+    globalThis.partbody0 = "Wenis"
+    globalThis.partbody1 = "Flexi Carpi Radalis"
+    globalThis.partbody2 = "Cuneiform"
+}; 
+
+function verbing() {
+       globalThis.verbing0 = "baby Kicking"
+       globalThis.verbing1 = "purple koolaid Drinking"
+       globalThis.verbing2 = "Frying"
+};
+
+function adverbs(){
+       globalThis.adverbs0 = "Everywhere"
+       globalThis.adverbs1 = "She Gently Stroked Her Hair"
+       globalThis.adverbs2 = "Slowly He Picked up the Knife"
+};
+
+noun();
+nouns();
+adjective();
+numbers();
+partbody();
+adverbs();
+verbing();
+
+var nnoun = [noun0, noun1, noun2, noun3, noun4];
+var aadjective = [adjective0, adjective1, adjective2, adjective3, adjective4];
+var nnouns = [nouns0, nouns1, nouns2, nouns3, nouns4];
+var vverbing = [verbing0, verbing1, verbing2];
+var aadverb = [adverbs0, adverbs1, adverbs2];
+var ppartbody = [partbody0, partbody1, partbody2];
+var nnumbers = [numbers0, numbers1, numbers2];
+
+var story =("ATENTION ALL SWIMERS! If you want to swim in this " + pickrandomword(nnoun) + 
+" or soak in our " + pickrandomword(aadjective) + 
+" spa, you must follow these " + pickrandomword(aadjective) + 
+" rules. 1. No nude " + pickrandomword(vverbing) + 
+"allowed. Men must wear " + pickrandomword(aadjective) + 
+" shorts, and women must wear one-piece bathing " + pickrandomword(nnouns) +
+" or " + pickrandomword(aadjective) + 
+" bikinis.2. No " + pickrandomword(nnouns) + 
+" under the age of " + pickrandomword(nnumbers) +
+" are allowed in the " + pickrandomword(nnoun) +
+" unless accompanied by a/an " + pickrandomword(nnoun) + 
+". 3. " + pickrandomword(nnoun) + 
+" in the pool is only permitted in the " + pickrandomword(aadjective) + 
+" end, and only when a life- " + pickrandomword(nnoun) + 
+" is on duty. 4. People with " + pickrandomword(aadjective) + 
+" hair must wear bathing " + pickrandomword(nnouns) + 
+". WARNING! If you plan to sunbathe, " + pickrandomword(aadverb) +
+" cover your arms, legs, and " + pickrandomword(ppartbody) +
+" with a/an " + pickrandomword(aadjective) +
+" lotion. Youn don't want to get a/an " + pickrandomword(nnoun) +
+"-burn! Have a/an " + pickrandomword(aadjective) +
+" day!"
+);
+ //Have a/an day - Adrian
+       
+document.write(story.fontsize(6));
+
+</script>
+
+</body>
+
+</html>
